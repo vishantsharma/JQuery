@@ -1,0 +1,74 @@
+/* ---   Global Styles  ---- */
+body
+{   
+   background-color:#DDE6DA;
+   padding-top: 50px;
+}   
+/*   Navbar      */
+
+.navbar-brand{
+   padding: 0;
+}
+#searchinput
+{
+   width: 200px;
+}
+/* Table Data */
+
+.firstPoster, .secondTitle, .thirdYear, .fourthType
+{
+   text-align: center;
+   font-size: 120%;
+}
+td 
+{
+   text-align: center;
+   font-size: 190%;
+}
+.posterImg
+{
+   width: 100%;
+}
+/* Pagination Styles */
+#page{
+   margin-top: 40px;
+}
+#pagination li{
+   list-style: none;
+   color: white;
+   background-color: grey;
+   text-align: center;
+   width: 35px;
+   height: 30px;
+   float: left;
+}
+#pagination li:hover{
+   background-color: orange;
+   cursor: pointer;
+}
+
+/* ------- Media Queries ----*/
+/* Portrait & landscape phone */
+
+@media (max-width: 480px) {
+   td
+   {
+      font-size: 70%;
+   }
+   .posterImg
+   {
+      height: 30%;
+   }
+   header
+   {
+      margin-top: 80px;
+   }
+}
+@media (max-width: 766px)
+{
+  header
+  {
+   margin-top: 80px;
+}
+
+}

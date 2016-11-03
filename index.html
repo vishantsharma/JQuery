@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Webpage Title  -->
+	<title> Movie Central</title>
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+	
+	<!-- Custom CSS -->
+	<link href="includes/css/styles.css" rel="stylesheet">
+</head>
+<body>
+	
+	
+	<!--------------------- Navbar --------------------------- -->
+	<header>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"> <img src="images/headerlogo.png" alt="Logo"> </a>
+				<div class="navbar-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="">Home</a>
+						</li>
+						<li>
+							<!-- Search Bar in Navbar -->
+
+
+							<form class="navbar-form navbar-right">
+								<input type="text" class="form-control" placeholder="Search Movie Central..."  id="searchinput">
+
+								<button type="button" id="Button"> <span class="glyphicon glyphicon-search"> </span></button>
+
+							</form>
+						</li>
+					</ul>
+
+
+					
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Container for Table -->
+	<div class="container">
+		<table style="width:100%"  border="2px">
+			  <tr>
+				    <th class="firstPoster">Poster</th>
+				    <th class="secondTitle">Title</th>
+				    <th class="thirdYear">Year</th>
+				    <th class="fourthType">Type</th>
+			  </tr>
+			<tbody id="tBody">
+			</tbody>
+
+		</table>
+	</div> <!-- End container for table -->
+
+	<!-- Container for Pagination -->
+	<div class="container" id="page">
+		<ul id="pagination"></ul>
+	</div> <!-- End container for pagination -->
+
+	<!-- Script Files -->
+	<script src = jquery-3.1.1.min.js></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="../js/mainScript.js"></script>
+	
+</body>
+</html>
